@@ -1,4 +1,96 @@
+/* font used on page */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;900&display=swap');
+
+/* font used on main-image */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 nav img {
   display: block;
   margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+nav div {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  margin-top: 17px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+}
+
+nav div a {
+  color: #4c4c4c;
+  font-size: 13px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 600;
+  margin: 0 38px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  letter-spacing: 1.2px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+nav div a:hover {
+  border-bottom: 5px solid #e9007f;
+  color: #4c4c4c;
+  transition: all .4s;
+}
+
+section.main-image{
+  background-image: url(./images/bottle.jpg);
+  background-size: cover;
+  height: 680px;
+}
+
+section.main-image h1, section.main-image h2, section.main-image h3 {
+  color: #4c4c4c;
+  font-family: 'Permanent Marker', cursive;
+  text-transform: uppercase;
+}
+
+section.main-image h1 {
+  color:#0061e0;
+  font-size: 4.5rem;
+  position: absolute;
+  right: 65px;
+  top: 350px;
+  width: 400px;
+}
+
+section.main-image h2{
+  color:rgba(240, 248, 255, 0.61);
+  font-size: 2.5rem;
+  line-height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 780px;
+  text-align: center;
+  width: 150px;
+}
+
+section.main-image h2 span{
+  font-size: 1rem;
+}
+
+section.main-image h3 {
+  color:rgba(240, 248, 255, 0.726);
+  font-size: 2rem;
+  position: absolute;
+  top: 820px;
+}
+
+section.main-image h3 span{
+  color: goldenrod;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0;
+  font-weight: 900;
 }
